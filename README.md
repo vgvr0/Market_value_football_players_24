@@ -9,7 +9,8 @@ Linear regression models are fit and cross-validated using the different variabl
 Neural network models are also tuned and cross-validated using the promising variable subsets. Tuning parameters like number of hidden nodes, weight decay are optimized. The cross-validated performance of the neural nets are compared.
 
 A final neural network model is built using the 7 variables selected by random forest importance - release_clause_eur_m, overall, potential, wage_eur_m, movement_reactions, skill_ball_control, age. With 7 inputs, 53 hidden nodes and decay=0.01 gave optimal results in repeated cross-validation:
-size decay bag RMSE Rsquared MAE RMSESD RsquaredSD MAESD
+size decay bag 
+> RMSE Rsquared MAE RMSESD RsquaredSD MAESD
 > 53 0.01 FALSE 0.7414321 0.9911114 0.164906 0.3217185 0.007714562 0.01499751
 > 
 This final model outperforms the linear regression models in cross-validation. Further tuning of the max iterations parameter showed some overfit after 1000-1500 iterations.
