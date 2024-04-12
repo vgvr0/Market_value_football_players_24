@@ -1,0 +1,30 @@
+# Market_value_football_players_24
+
+## Project Overview
+
+This project aims to develop predictive models for estimating the market values of football players based on their attributes and performance data. The models are trained using data from the 2023-2024 season and employ machine learning techniques to capture complex relationships between player characteristics and their market worth.
+
+## Installation
+
+To install the required dependencies and run the project, follow these steps:
+
+1. Install R and RStudio: Download and install the latest versions of R and RStudio from their official websites.
+2. Install Packages: Open RStudio and install the required packages using the `install.packages()` function. For example, to install the `tidyverse` package, type `install.packages("tidyverse")`.
+3. Clone the Repository: Clone the project repository to your local machine using Git or a similar version control system.
+
+## Usage
+
+1. Run the `Modelos.R` script: Navigate to the project directory and execute the `Modelos.R` script using RStudio or the R command line.
+2. Analyze Results: The script will generate model outputs and visualizations. Interpret the results to understand the factors influencing player market values.
+
+## Contributing
+
+Contributions are welcome! If you have ideas for improving the models or analysis, please create a pull request on the project repository.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For any questions or feedback, please contact
