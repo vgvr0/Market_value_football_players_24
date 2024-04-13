@@ -1,34 +1,34 @@
-# Predicción del Valor de Mercado de Futbolistas
+# Predicting Football Player Market Value
 
-## Tabla de Contenidos
+## Table of Contents
 
-1. Librerías y Carga de Datos
-2. Descripción y Análisis Exploratorio Inicial
-3. Transformación y Creación de Variables
-4. Selección de Variables
-5. Modelización y Ajuste de Hiperparámetros
-6. Conclusiones
+1. Libraries and Data Loading
+2. Description and Initial Exploratory Analysis
+3. Data Transformation and Feature Engineering
+4. Variable Selection
+5. Modeling and Hyperparameter Tuning
+6. Conclusions
 
-1. Librerías y Carga de Datos
+1. Libraries and Data Loading
 
-En esta sección, se importan las librerías necesarias para el análisis y se cargan los datos relacionados con los futbolistas y sus valores de mercado.
+In this section, necessary libraries are imported and data related to football players and their market values is loaded.
 
-2. Descripción y Análisis Exploratorio Inicial
+2. Description and Initial Exploratory Analysis
 
-En esta sección, se realiza una descripción del conjunto de datos y un análisis exploratorio inicial para comprender mejor la naturaleza de los datos y las características de los futbolistas.
+This section provides a description of the dataset and conducts initial exploratory analysis to better understand the nature of the data and the characteristics of the football players.
 
-3. Transformación y Creación de Variables
+3. Data Transformation and Feature Engineering
 
-Aquí se llevan a cabo transformaciones en los datos y se crean nuevas variables si es necesario para preparar los datos para su modelización.
+Here, transformations are applied to the data and new variables are created if necessary to prepare the data for modeling.
 
-4. Selección de Variables
+4. Variable Selection
 
-Se realiza la selección de variables, donde se identifican las características más relevantes para predecir el valor de mercado de los futbolistas.
+Variable selection is performed, identifying the most relevant features for predicting the market value of football players.
 
-5. Modelización y Ajuste de Hiperparámetros
+5. Modeling and Hyperparameter Tuning
 
-En esta sección, se aplican técnicas de modelización (como regresión lineal, árboles de decisión, etc.) para predecir el valor de mercado de los futbolistas. Se ajustan los hiperparámetros de los modelos para mejorar su rendimiento.
+In this section, modeling techniques (such as linear regression, decision trees, etc.) are applied to predict the market value of football players. Hyperparameters of the models are tuned to improve performance.
 
-6. Conclusiones
+6. Conclusions
 
-Se presentan las conclusiones finales del análisis, incluyendo los modelos más efectivos para predecir el valor de mercado de los futbolistas y posibles áreas para futuras investigaciones.
+Final conclusions of the analysis are presented, including the most effective models for predicting the market value of football players and possible areas for future research.
