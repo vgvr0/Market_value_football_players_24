@@ -1,5 +1,7 @@
 # Predicting Football Player Market Value
 
+![Texto alternativo](TOP_2024.jpg)
+
 ## Table of Contents
 
 1. Libraries and Data Loading
