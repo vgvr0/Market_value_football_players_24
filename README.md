@@ -1,6 +1,6 @@
 # Predicting Football Player Market Value
 
-![Texto alternativo](TOP_2024.jpg)
+![Texto alternativo](Top_2024.jpg)
 
 ## Table of Contents
 
