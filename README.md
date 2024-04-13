@@ -12,7 +12,31 @@
 ## 1. Libraries and Data Loading
 
 In this section, necessary libraries are imported and data related to football players and their market values is loaded.
-
+```R
+library(Boruta)
+library(caret)
+library(corrplot)
+library(cowplot)
+library(doParallel)
+library(dplyr)
+library(dummies)
+library(gam)
+library(ggplot2)
+library(gridExtra)
+library(klaR)
+library(lubridate)
+library(MASS)
+library(mlbench)
+library(MXM)
+library(naniar)
+library(parallel)
+library(psych)
+library(randomForest)
+library(reshape2)
+library(RColorBrewer)
+library(sas7bdat)
+library(VIM)
+```
 ## 2. Description and Initial Exploratory Analysis
 
 This section provides a description of the dataset and conducts initial exploratory analysis to better understand the nature of the data and the characteristics of the football players.
