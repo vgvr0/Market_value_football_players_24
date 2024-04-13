@@ -1,21 +1,34 @@
-# PlayerValuePredictor
+# Predicción del Valor de Mercado de Futbolistas
 
-Predicting the market value of football players in 2024 using linear regression and neural networks
+## Tabla de Contenidos
 
-Here are a few key observations from analyzing the provided R code:
+1. Librerías y Carga de Datos
+2. Descripción y Análisis Exploratorio Inicial
+3. Transformación y Creación de Variables
+4. Selección de Variables
+5. Modelización y Ajuste de Hiperparámetros
+6. Conclusiones
 
-The code performs extensive feature selection using various methods like stepwise AIC/BIC, Boruta, MXM, SES, random forest importance, etc. This results in several different subsets of predictor variables being identified as potentially important.
+1. Librerías y Carga de Datos
 
-Linear regression models are fit and cross-validated using the different variable subsets. The cross-validation results are compared using boxplots of the RMSE. The stepwise AIC and BIC models seem to perform similarly well.
-Neural network models are also tuned and cross-validated using the promising variable subsets. Tuning parameters like number of hidden nodes, weight decay are optimized. The cross-validated performance of the neural nets are compared.
+En esta sección, se importan las librerías necesarias para el análisis y se cargan los datos relacionados con los futbolistas y sus valores de mercado.
 
-## A final neural network model is built using the 7 variables selected by random forest importance - release_clause_eur_m, overall, potential, wage_eur_m, movement_reactions, skill_ball_control, age. With 7 inputs, 53 hidden nodes and decay=0.01 gave optimal results in repeated cross-validation:
-size decay bag 
+2. Descripción y Análisis Exploratorio Inicial
 
-> RMSE Rsquared MAE RMSESD RsquaredSD MAESD
-> 
-> 53 0.01 FALSE 0.7414321 0.9911114 0.164906 0.3217185 0.007714562 0.01499751
->
-> 
-This final model outperforms the linear regression models in cross-validation. Further tuning of the max iterations parameter showed some overfit after 1000-1500 iterations.
-In summary, a neural network with 7 key predictors, 1 hidden layer of 53 nodes, weight decay regularization of 0.01 and ~1000 iterations provides a robust, high-performing model to predict player value based on this data and methodology. The extensive feature selection and cross-validated model comparisons lend confidence to this being a reliable model.
+En esta sección, se realiza una descripción del conjunto de datos y un análisis exploratorio inicial para comprender mejor la naturaleza de los datos y las características de los futbolistas.
+
+3. Transformación y Creación de Variables
+
+Aquí se llevan a cabo transformaciones en los datos y se crean nuevas variables si es necesario para preparar los datos para su modelización.
+
+4. Selección de Variables
+
+Se realiza la selección de variables, donde se identifican las características más relevantes para predecir el valor de mercado de los futbolistas.
+
+5. Modelización y Ajuste de Hiperparámetros
+
+En esta sección, se aplican técnicas de modelización (como regresión lineal, árboles de decisión, etc.) para predecir el valor de mercado de los futbolistas. Se ajustan los hiperparámetros de los modelos para mejorar su rendimiento.
+
+6. Conclusiones
+
+Se presentan las conclusiones finales del análisis, incluyendo los modelos más efectivos para predecir el valor de mercado de los futbolistas y posibles áreas para futuras investigaciones.
