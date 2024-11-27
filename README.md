@@ -102,7 +102,6 @@ Key findings:
 - Models using features like `release_clause_eur_m`, `potential`, and `overall` performed exceptionally well.
 - Neural networks provided the best results with optimized parameters, achieving RMSE as low as **0.5115** in cross-validation.
 
-For detailed results, refer to the [results/](results/) folder.
 
 ---
 
@@ -115,21 +114,6 @@ Potential improvements include:
 
 ---
 
-## How to Run the Project
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/football-market-value.git
-   ```
-2. Load the project files in RStudio or your preferred R IDE.
-3. Ensure the required libraries are installed (see [Setup and Libraries](#setup-and-libraries)).
-4. Run the scripts in the following order:
-   - `01_data_loading.R`
-   - `02_feature_engineering.R`
-   - `03_feature_selection.R`
-   - `04_modeling.R`
-
-5. Review the results in the generated output files.
 
 ---
 
