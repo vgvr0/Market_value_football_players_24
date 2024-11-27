@@ -1,19 +1,35 @@
 # Predicting Football Player Market Value
 
-![Portada](Top_2024.jpg)
+![Project Banner](Top_2024.jpg)
+
+## Overview
+
+This project aims to predict the market value of football players using machine learning models. By exploring, engineering features, and applying advanced algorithms, we strive to uncover insights and achieve accurate predictions.
 
 ## Table of Contents
 
-1. Libraries and Data Loading
-2. Description and Initial Exploratory Analysis
-3. Data Transformation and Feature Engineering
-4. Variable Selection
-5. Modeling and Hyperparameter Tuning
-6. Conclusions
+1. [Introduction](#introduction)
+2. [Setup and Libraries](#setup-and-libraries)
+3. [Exploratory Data Analysis](#exploratory-data-analysis)
+4. [Data Preprocessing and Feature Engineering](#data-preprocessing-and-feature-engineering)
+5. [Feature Selection](#feature-selection)
+6. [Modeling and Evaluation](#modeling-and-evaluation)
+7. [Results and Conclusions](#results-and-conclusions)
+8. [Future Work](#future-work)
+9. [How to Run the Project](#how-to-run-the-project)
 
-## 1. Libraries and Data Loading
+---
 
-In this section, necessary libraries are imported and data related to football players and their market values is loaded.
+## Introduction
+
+Understanding the market value of football players is crucial for clubs, agents, and analysts. This project leverages machine learning techniques to analyze historical player data, evaluate performance, and predict player market values effectively.
+
+---
+
+## Setup and Libraries
+
+To replicate the analysis or contribute to the project, ensure you have the following libraries installed:
+
 ```R
 library(Boruta)
 library(caret)
@@ -21,41 +37,99 @@ library(corrplot)
 library(cowplot)
 library(doParallel)
 library(dplyr)
-library(dummies) 
+library(dummies)
 library(gam)
 library(ggplot2)
 library(gridExtra)
-library(klaR)
 library(lubridate)
-library(MASS)
-library(mlbench)
-library(missForest)
-library(MXM)
-library(naniar)
-library(parallel)
-library(psych)
 library(randomForest)
-library(reshape2)
-library(RColorBrewer)
-library(sas7bdat)
-library(VIM)
 ```
-## 2. Description and Initial Exploratory Analysis
 
-This section provides a description of the dataset and conducts initial exploratory analysis to better understand the nature of the data and the characteristics of the football players.
+Additional libraries may be listed in the source code.
 
-## 3. Data Transformation and Feature Engineering
+---
 
-Here, transformations are applied to the data and new variables are created if necessary to prepare the data for modeling.
+## Exploratory Data Analysis
 
-## 4. Variable Selection
+An initial analysis was conducted to understand the dataset's structure and identify key variables:
+- Basic statistics and distributions of player features.
+- Correlation analysis to explore relationships between variables.
+- Visualizations to highlight trends and anomalies.
 
-Variable selection is performed, identifying the most relevant features for predicting the market value of football players.
+---
 
-## 5. Modeling and Hyperparameter Tuning
+## Data Preprocessing and Feature Engineering
 
-In this section, modeling techniques (such as linear regression, decision trees, etc.) are applied to predict the market value of football players. Hyperparameters of the models are tuned to improve performance.
+Key steps included:
+- Handling missing values using imputation strategies.
+- Scaling and normalizing numerical features for consistency.
+- Creating dummy variables for categorical data.
+- Engineering new features such as `years_remaining` and player `categories`.
 
-## 6. Conclusions
+---
 
-Final conclusions of the analysis are presented, including the most effective models for predicting the market value of football players and possible areas for future research.
+## Feature Selection
+
+Various methods were explored to select the most relevant features for modeling, including:
+1. **Stepwise Selection (AIC and BIC)**
+2. **Boruta Algorithm**
+3. **Recursive Feature Elimination (RFE)**
+4. **Random Forest Feature Importance**
+
+The final selected features differ based on the modeling technique used, ensuring the best predictive performance.
+
+---
+
+## Modeling and Evaluation
+
+Multiple machine learning models were applied and tuned, such as:
+- **Linear Regression**: For baseline performance.
+- **Random Forest**: To capture non-linear relationships.
+- **Artificial Neural Networks (ANNs)**: To model complex interactions.
+
+Evaluation metrics:
+- **RMSE (Root Mean Square Error)**
+- **R² (Coefficient of Determination)**
+- **MAE (Mean Absolute Error)**
+
+Hyperparameter tuning was performed to optimize model performance.
+
+---
+
+## Results and Conclusions
+
+Key findings:
+- Models using features like `release_clause_eur_m`, `potential`, and `overall` performed exceptionally well.
+- Neural networks provided the best results with optimized parameters, achieving RMSE as low as **0.5115** in cross-validation.
+
+For detailed results, refer to the [results/](results/) folder.
+
+---
+
+## Future Work
+
+Potential improvements include:
+- Incorporating additional datasets, such as player injuries or transfer market trends.
+- Experimenting with ensemble methods.
+- Deploying the model as an API for real-time market value predictions.
+
+---
+
+## How to Run the Project
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/football-market-value.git
+   ```
+2. Load the project files in RStudio or your preferred R IDE.
+3. Ensure the required libraries are installed (see [Setup and Libraries](#setup-and-libraries)).
+4. Run the scripts in the following order:
+   - `01_data_loading.R`
+   - `02_feature_engineering.R`
+   - `03_feature_selection.R`
+   - `04_modeling.R`
+
+5. Review the results in the generated output files.
+
+---
+
